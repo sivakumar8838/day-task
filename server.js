@@ -31,7 +31,7 @@ const studentSchema = new mongoose.Schema({
   course: String,
 }, { versionKey: false }); 
 
-const studentsAll = mongoose.model('studentsAll', studentSchema, 'stduents'); 
+const studentsAll = mongoose.model('studentsAll', studentSchema, 'student'); 
 const mentors = mongoose.model('mentors', mentorSchema, 'mentors');
 
 app.get('/', (req, res) => {
